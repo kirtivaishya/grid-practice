@@ -1,33 +1,45 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    height: 100%;
-}
-header{
-    height: 40px;
-    width: 100%;
-    background-color: rgb(201, 201, 230);
+* {
+  margin: 0;
 }
 
-.main{
-    height: 25vh;
+header {
+  height: 40px;
   width: 100%;
-    background-color:blanchedalmond;
-    color: rgb(0, 217, 255);
-    border-bottom: black 2px;
-    text-align: center;
+  background-color: cornflowerblue;
 }
-.ad{
-    height: 40%;
+div{
   width: 100%;
-    background-color:rgb(156, 180, 119);
-    color: rgb(224, 199, 198);
-    text-align: center;
+  height: 90vh;
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr ;
 }
-.navi{
-    height: 40%;
+section {
   width: 100%;
-    background-color:rgb(218, 80, 80);
-    color: rgb(224, 199, 198);
-    text-align: center;
+  text-align: center;
+}
+
+.nav {
+ 
+  background-color: lightblue;
+    color: blue;
+}
+
+.main {
+ 
+  background-color: white;
+  
+  color: grey;
+}
+
+.ads {
+  
+  background-color: lightgreen;
+  line-height: 20vh;
+  color: green;
+}
+@media screen and (min-width: 768px){
+  div{
+     grid-template-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;   
+  }
 }
